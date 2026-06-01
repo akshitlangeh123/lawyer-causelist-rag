@@ -1,0 +1,28 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# Secrets and local env
+.env
+.env.local
+.env.docker
+
+# Local legal/court data
+data/raw/
+data/extracted/
+data/processed/*.db
+data/processed/*.db-*
+data/vector_store/
+data/model_cache/
+data/eval/results/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+
+# System
+.DS_Store

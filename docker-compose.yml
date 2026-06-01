@@ -1,0 +1,27 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: jammu-causelist-api
+    env_file:
+      - .env.docker
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+      - ./data/model_cache:/root/.cache
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        VITE_API_BASE_URL: /api
+    container_name: jammu-causelist-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - api
+    restart: unless-stopped
