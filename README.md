@@ -1,4 +1,9 @@
-# Jammu Cause List RAG
+# Output Screenshots
+<img width="1146" height="778" alt="image" src="https://github.com/user-attachments/assets/b2b5eee7-3ee6-452a-9a0e-8f8506965415" />
+<img width="1443" height="616" alt="image" src="https://github.com/user-attachments/assets/0ed23be1-8b01-4cbe-a590-8124426bcdd2" />
+
+
+# Lawyer Cause List RAG
 
 A local RAG-based search and question-answering system for Jammu District Court cause-list PDFs.
 
