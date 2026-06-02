@@ -9,7 +9,7 @@ from app.main import app
 
 
 @pytest.fixture()
-def client(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> TestClient:
+def client(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> TestClient: # type: ignore
     test_db_path = tmp_path / "test_cause_list.db"
 
     monkeypatch.setattr(database_module, "DB_PATH", test_db_path)
